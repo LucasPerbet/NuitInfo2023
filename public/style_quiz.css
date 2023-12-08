@@ -50,4 +50,20 @@ body {
   button:hover {
     background-color: #008080; /* Couleur du bouton au survol */
   }
-  
+  .result-question {
+    margin-bottom: 20px;
+    border: 1px solid #00c2cb;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* Style pour les zones de texte personnalisées */
+.custom-textbox {
+  width: 200px; /* Modifiez la largeur selon vos préférences */
+  height: 20px;
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 4px; /* Coins arrondis */
+  box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur/hauteur totale */
+  /* Ajoutez d'autres styles selon vos préférences */
+}
