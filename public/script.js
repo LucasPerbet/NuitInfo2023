@@ -65,3 +65,46 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+  // initialisation
+let allowedKeys = {
+  37: 'left',
+  38: 'up',
+  39: 'right',
+  40: 'down',
+  65: 'a',
+  66: 'b'
+};
+
+// sequence à saisir pour le code
+let konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+
+// variable à mémoriser
+let konamiCodePosition = 0;
+
+// lire le code
+document.addEventListener('keydown', function(e) {
+  // récupérer les touches
+  let key = allowedKeys[e.keyCode];
+  // récupérer les touches requises
+  let requiredKey = konamiCode[konamiCodePosition];
+
+  // comparer les deux clées
+  if (key == requiredKey) {
+
+    // passer à la touche suivante
+    konamiCodePosition++;
+
+    // activer à la dernière touche
+    if (konamiCodePosition == konamiCode.length) {
+      activateCheats();
+      konamiCodePosition = 0;
+    }
+  } else {
+    konamiCodePosition = 0;
+  }
+});
+
+function activateCheats() {
+  document.location.href="https://www.ipcc.ch/languages-2/francais/"; 
+}

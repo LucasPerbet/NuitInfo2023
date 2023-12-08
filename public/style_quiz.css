@@ -1,11 +1,53 @@
-body{
-    background-color: #42455a;
-}
+/* style_quiz.css */
 
-h1 {
-    color: #e0ffff;;
-}
-label {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #42455a; /* Arrière-plan gris */
+    color: #ffffff; /* Couleur du texte en blanc */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00c2cb; /* Couleur du titre */
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .question-form {
+    margin-bottom: 20px;
+  }
+  
+  .question-form p {
+    font-weight: bold;
+  }
+  
+  label {
     display: block;
     margin-bottom: 10px;
   }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00c2cb; /* Couleur du bouton */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #008080; /* Couleur du bouton au survol */
+  }
+  
