@@ -4,7 +4,8 @@ const controller = require('../controllers/controllers');
 const router = express.Router();  
 
 // Liste des routes utilisables pour Patient
-router.get('/',controller.Home);
+router.get('/',controller.quiz);
+router.get('/main.ejs',controller.home);
 router.get('*',controller.Error);
 
 module.exports = router;
