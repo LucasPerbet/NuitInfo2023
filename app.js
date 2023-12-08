@@ -15,6 +15,7 @@ const app = express();
 // Definition du chemin des vues
 app.set("views",path.resolve(__dirname,'views'));
 app.use(express.static('public'));
+app.use(express.static('node_modules'));
 
 
 // Utilisation de EJS
