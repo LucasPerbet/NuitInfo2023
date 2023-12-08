@@ -6,6 +6,9 @@ const controller={
 	home(req,res){
 		res.render('main')
 	},
+	ubisoft(req,res){
+		res.render('ubisoft')
+	},
 	Error(req, res) {
 		res.render('404')
 	}
