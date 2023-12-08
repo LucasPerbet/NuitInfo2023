@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style_quiz.css">
+  <title>Quiz sur le changement climatique</title>
+</head>
+
+<body>
+
+  <h1>Quiz sur le changement climatique</h1>
+
+  <form id="quizForm">
+    <div>
+      <p>Question 1 : La fonte des glaces est uniquement due au réchauffement climatique naturel ?</p>
+      <label>
+        <input type="radio" name="q1" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q1" value="false"> Faux
+      </label>
+    </div>
+    <div>
+      <p>Question 2 : Il est trop tard pour lutter contre le réchauffement climatique ?</p>
+      <label>
+        <input type="radio" name="q2" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q2" value="false"> Faux
+      </label>
+    </div>
+    <div>
+      <p>Question 3 : Les voitures électriques sont la solution ultime pour réduire les émissions de gaz à effet de
+        serre
+        ?</p>
+      <label>
+        <input type="radio" name="q3" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q3" value="false"> Faux
+      </label>
+    </div>
+    <div>
+      <p>Question 4 : Planter des arbres permettra de compenser toutes les émissions de gaz à effet de serre ?</p>
+      <label>
+        <input type="radio" name="q4" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q4" value="false"> Faux
+      </label>
+    </div>
+    <div>
+
+    </div>
+    <button type="button" onclick="validateQuiz()">Valider</button>
+  </form>
+
+  <script>
+    function validateQuiz() {
+      window.location.href = 'main.ejs';
+    }
+  </script>
+
+</body>
+
+</html>

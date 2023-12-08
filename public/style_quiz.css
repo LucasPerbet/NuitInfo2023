@@ -1,0 +1,11 @@
+body{
+    background-color: #42455a;
+}
+
+h1 {
+    color: #e0ffff;;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+  }

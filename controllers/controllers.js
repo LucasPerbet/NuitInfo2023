@@ -1,7 +1,7 @@
 const controller={  
     
 	Home(req,res){  
-  	    res.render('main')  
+  	    res.render('quiz')  
 	},
 
 	Error(req, res) {
